@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Search For a Doctor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Find Your Doctor</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="healthNews.html">Health News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Add a Doctor
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Add a Doctor</li>
+      </ol>
+
+      <!-- Image Header -->
+      <img  src="images/searching.jpg" alt="" height="200" width="900" >
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+
+        <form action="/action_page.php">
+          <fieldset>  
+              <legend>Fill out the information below to add a doctor</legend>
+            <h6>First name:</h6>
+            <input type="text" name="firstname" placeholder="Enter the First Name" required>
+            <br>
+            
+            <h6>Middle name:</h6>
+            <input type="text" name="middletname" placeholder="Enter the Middle Name">
+            <br>
+            
+            <h6>Last name:</h6>
+            <input type="text" name="lastname" placeholder="Enter the Last Name" required>
+            <br>
+           
+            <h6>Gender:</h6>
+            <input type="radio" name="gender" value="Male"> Male 
+            <input type="radio" name="gender" value="Female"> Female
+            <br>
+            <div>     
+            <h6>Specialty:</h6>
+            <input name="specialty" list="specialties" placeholder="Specialty" >
+            <datalist id="specialties" >
+                    <option value="Dermatology">
+                    <option value="Family Medicine">
+                    <option value="Urology">
+            </br>
+            </div>
+
+            <div>     
+            <h6>Region:</h6>
+            <input name="region" list="regions" placeholder="Region" >
+            <datalist id="regions" >
+                    <option value="Dermatology">
+                    <option value="Family Medicine">
+                    <option value="Urology">
+            </br>
+            </div>
+            
+            <div>
+            <h6>City:</h6>
+            <input name="city" list="cities" placeholder="City" >
+            <datalist id="cities" >
+                    <option value="Dermatology">
+                    <option value="Family Medicine">
+                    <option value="Urology">
+            </br>
+            </div>
+
+            <div>
+            <h6>Hospital:</h6>
+            <input name="hospital" list="hospitals" placeholder="Hospital" >
+            <datalist id="hospitals" >
+                    <option value="Dermatology">
+                    <option value="Family Medicine">
+                    <option value="Urology">
+            </br>
+            </div>
+
+            <h6>Upload Photo (optional):</h6>
+            (JPG, PNG, GIF, or BMP format only. Max 4MB. Minimum 165px in size)
+            </br>
+            
+            
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg">
+            
+
+          </fieldset>
+        </form>
+      </div>
+      <!-- /.row -->
+      <hr>
+      </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2018 Find_your_doctor.com</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
