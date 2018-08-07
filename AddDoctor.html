@@ -61,76 +61,94 @@
       <img  src="images/searching.jpg" alt="" height="200" width="900" >
 
       <!-- Marketing Icons Section -->
-      <div class="row">
-
-        <form action="/action_page.php">
-          <fieldset>  
-              <legend>Fill out the information below to add a doctor</legend>
-            <h6>First name:</h6>
-            <input type="text" name="firstname" placeholder="Enter the First Name" required>
-            <br>
+      <div class="row" >
+        <h3>Fill out the information below to add a doctor</h3>
+        
+        <form name="addDoctor" id="contactForm" action="/action_page.php">
             
-            <h6>Middle name:</h6>
-            <input type="text" name="middletname" placeholder="Enter the Middle Name">
-            <br>
+          <div class="control-group form-group"> 
+            <div class="controls">
+            <label>First name:</label>
+            <input type="text" name="firstname" class="form-control" placeholder="Enter the First Name" required>
+            </div>
+          </div>
             
-            <h6>Last name:</h6>
-            <input type="text" name="lastname" placeholder="Enter the Last Name" required>
-            <br>
-           
-            <h6>Gender:</h6>
-            <input type="radio" name="gender" value="Male"> Male 
-            <input type="radio" name="gender" value="Female"> Female
-            <br>
-            <div>     
-            <h6>Specialty:</h6>
-            <input name="specialty" list="specialties" placeholder="Specialty" >
-            <datalist id="specialties" >
-                    <option value="Dermatology">
-                    <option value="Family Medicine">
-                    <option value="Urology">
-            </br>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Middle name:</label>
+              <input type="text" name="middletname" class="form-control" placeholder="Enter the Middle Name"> 
             </div>
-
-            <div>     
-            <h6>Region:</h6>
-            <input name="region" list="regions" placeholder="Region" >
-            <datalist id="regions" >
-                    <option value="Dermatology">
-                    <option value="Family Medicine">
-                    <option value="Urology">
-            </br>
-            </div>
+          </div>        
             
-            <div>
-            <h6>City:</h6>
-            <input name="city" list="cities" placeholder="City" >
-            <datalist id="cities" >
-                    <option value="Dermatology">
-                    <option value="Family Medicine">
-                    <option value="Urology">
-            </br>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Last name:</label>
+              <input type="text" name="lastname" class="form-control" placeholder="Enter the Last Name" required>
             </div>
-
-            <div>
-            <h6>Hospital:</h6>
-            <input name="hospital" list="hospitals" placeholder="Hospital" >
-            <datalist id="hospitals" >
-                    <option value="Dermatology">
-                    <option value="Family Medicine">
-                    <option value="Urology">
-            </br>
-            </div>
-
-            <h6>Upload Photo (optional):</h6>
-            (JPG, PNG, GIF, or BMP format only. Max 4MB. Minimum 165px in size)
-            </br>
+          </div>
             
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Gender:</label>
+              <input type="radio" name="gender" value="Male"> Male 
+              <input type="radio" name="gender" value="Female"> Female
+            </div>
+          </div>
+            
+          <div class="control-group form-group">
+            <div class="controls">  
+              <label>Specialty:</label>  
+              <input name="specialty" list="specialties" class="form-control" placeholder="Specialty" >
+              <datalist id="specialties" >
+                      <option value="Dermatology">
+                      <option value="Family Medicine">
+                      <option value="Urology">
+            </div>
+          </div>
+
+         <div class="control-group form-group">
+            <div class="controls">  
+              <label>Region:</label>
+              <input name="region" list="regions" class="form-control" placeholder="Region" >
+              <datalist id="regions" >
+                      <option value="Dermatology">
+                      <option value="Family Medicine">
+                      <option value="Urology">
+            </div>
+          </div>
+            
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>City:</label>
+                <input name="city" list="cities" class="form-control" placeholder="City" >
+                <datalist id="cities" >
+                      <option value="Dermatology">
+                      <option value="Family Medicine">
+                      <option value="Urology">
+               </div>
+             </div>
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Hospital:</label>
+                <input name="hospital" list="hospitals" class="form-control" placeholder="Hospital" >
+                <datalist id="hospitals" >
+                      <option value="Dermatology">
+                      <option value="Family Medicine">
+                      <option value="Urology">
+               </div>
+             </div>
+
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Upload Photo (optional):</label>
+                (JPG, PNG, GIF, or BMP format only. Max 4MB. Minimum 165px in size)
+                </br>
+             </div>
+            </div>
             
             <input type="submit" value="Submit" class="btn btn-primary btn-lg">
-            
-
-          </fieldset>
+          
         </form>
       </div>
       <!-- /.row -->
